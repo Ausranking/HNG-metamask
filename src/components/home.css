@@ -244,14 +244,12 @@ input:focus {
     margin-block-start: 2rem;
     max-width: 100%;
     min-height: 100vh;
-    /* border: 1px solid white; */
     background: var(--main-color);
 }
 
 .nft-wrap {
     display: flex;
     place-items: center;
-    /* border: 1px solid white; */
     display: flex;
     max-width: 90%;
     margin: auto;
@@ -294,11 +292,9 @@ footer {
 
 .footwrap {
     display: flex;
-    /* border: 1px solid white; */
-    /* place-items: center; */
     padding-block-start: 3rem;
     justify-content: space-between;
-    max-width: 90%;
+    width: 90%;
     margin: auto;
 }
 
@@ -333,11 +329,10 @@ ul>h4 {
 @media (max-width:600px) {
     .container {
         display: flex;
-        place-items: center;
         flex-direction: column;
         width: 100%;
         margin: auto;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
 
     }
 
@@ -347,7 +342,6 @@ ul>h4 {
     }
 
     .places {
-        border: 1px solid red;
         width: 100%;
         margin: auto;
     }
@@ -361,7 +355,6 @@ ul>h4 {
         align-items: center;
         justify-content: center;
         width: 100%;
-        border: 1px solid red;
         margin: auto;
 
         flex-direction: column;
