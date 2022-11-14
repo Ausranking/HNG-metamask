@@ -3,8 +3,10 @@ const Modal = ({open, close}) => {
 
 
     return (
-        <dialog id="myModal" className="modal" open={open}>
-            <div className="modal-content">
+        <dialog onClick={close} id="myModal" className="modal" open={open}>
+            <div onClick={(e) => {
+                e.stopPropagation()
+            }} className="modal-content">
                 <button onClick={close} className="close"><img src="images/close.png" alt="" /></button>
                 <h1>Connect Wallet:</h1>
                 <hr className="hr" />

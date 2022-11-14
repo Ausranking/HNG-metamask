@@ -44,28 +44,28 @@ function Home() {
                 </div>
                 <div className="grid">
                     <div>
-                        <img src="./images/Frame 142.png" alt="" />
+                        <a href=""><img src="./images/Frame 142.png" alt="desert-" /></a>
                     </div>
                     <div>
-                        <img src="./images/Group 4049.png" alt="" />
+                        <a href=""><img src="./images/Group 4049.png" alt="desert" /></a>
                     </div>
                     <div>
-                        <img src="./images/Group 4050.png" alt="" />
+                        <a href=""><img src="./images/Group 4050.png" alt="desert" /></a>
                     </div>
                     <div>
-                        <img src="./images/Group 4051.png" alt="" />
+                        <a href=""><img src="./images/Group 4051.png" alt="desert" /></a>
                     </div>
                     <div>
-                        <img src="./images/Group 4048.png" alt="" />
+                        <a href=""><img src="./images/Group 4048.png" alt="desert" /></a>
                     </div>
                     <div>
-                        <img src="./images/Group 40499.png" alt="" />
+                        <a href=""><img src="./images/Group 40499.png" alt="desert" /></a>
                     </div>
                     <div>
-                        <img src="./images/Group 40500.png" alt="" />
+                        <a href=""><img src="./images/Group 40500.png" alt="desert" /></a>
                     </div>
                     <div>
-                        <img src="./images/Group 40511.png" alt="" />
+                        <a href=""> <img src="./images/Group 40511.png" alt="desert" /></a>                       
                     </div>
                 </div>
             </section>

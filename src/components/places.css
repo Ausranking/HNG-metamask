@@ -1,0 +1,41 @@
+.nav-places {
+    /* border: 1px solid red; */
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    margin-block-start: 3rem;
+    margin-block-end: 1.5rem;
+    justify-content: space-between;
+    
+}
+
+.nav-places a {
+    height: 48px;
+    line-height: 48px;
+    color: #434343;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: var(--mainFont);
+    font-weight: 400;
+}
+
+.location-btn {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    align-items: center;
+    min-width: 170px;
+    height: 48px;
+    background: #fff;
+    border:  1px solid #B4B4B4;
+    border-radius: 10px;
+    color: #333333;
+    font: 400 18px var(--mainFont);   
+}
+.location-btn span img  {
+   position: absolute;
+   right: 1rem;
+   bottom: .6rem;
+
+}
