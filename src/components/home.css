@@ -42,7 +42,7 @@ li a {
 
 .header {
     z-index: 1;
-   min-height: 48px;
+    min-height: 48px;
     max-width: 90%;
     display: flex;
     justify-content: space-between;
@@ -338,17 +338,20 @@ ul>h4 {
         width: 100%;
         margin: auto;
         /* overflow-x: hidden; */
-     
+
     }
+
     .header {
         display: none;
         max-width: 90%;
     }
+
     .places {
         border: 1px solid red;
         width: 100%;
         margin: auto;
     }
+
     .nav-places {
         flex-direction: column;
     }
@@ -359,14 +362,19 @@ ul>h4 {
         justify-content: center;
         width: 100%;
         border: 1px solid red;
-        margin: auto;        
+        margin: auto;
+
         flex-direction: column;
+    }
+
+    .grid a img {
+        min-width: 350px;
     }
 
     main {
         flex-direction: column;
         gap: 2rem;
-        width: 100%; 
+        width: 100%;
         place-items: center;
         margin: auto;
     }
@@ -390,9 +398,9 @@ ul>h4 {
 
         height: 44px;
         border-radius: 8px;
-        border: 1px solid #A3A3A3; 
+        border: 1px solid #A3A3A3;
 
-     }
+    }
 
     #srch-btn {
         position: relative;
@@ -418,15 +426,15 @@ ul>h4 {
     }
 
     main .herotext {
-        display: block; 
+        display: block;
     }
 
     .herotext p {
         margin-block: 1.5rem;
         font-size: 1rem;
     }
+
     .footwrap {
-        flex-direction: column-reverse
-        ;
+        flex-direction: column-reverse;
     }
 }
