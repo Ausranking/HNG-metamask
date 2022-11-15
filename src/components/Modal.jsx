@@ -1,3 +1,6 @@
+import closeb from '../images/close.png'
+import metamask from '../images/metamask.png'
+import WALLETC from '../images/walletconnet.png'
 
 const Modal = ({open, close}) => {
 
@@ -7,15 +10,15 @@ const Modal = ({open, close}) => {
             <div onClick={(e) => {
                 e.stopPropagation()
             }} className="modal-content">
-                <button onClick={close} className="close"><img src="images/close.png" alt="" /></button>
+                <button onClick={close} className="close"><img src={closeb} alt="close-btn" /></button>
                 <h1>Connect Wallet:</h1>
                 <hr className="hr" />
                 <p>Choose your preferred wallet:</p>
                 <div className="wallets">
-                    <img src="images\metamask.png" alt="" />
+                    <img src={metamask} alt="crypto-coin" />
                 </div>
                 <div className="wallets">
-                    <img src="images\walletconnet.png" alt="" />
+                    <img src={WALLETC} alt="crypto-coin" />
                 </div>
             </div>
         </dialog>)

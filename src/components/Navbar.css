@@ -1,0 +1,85 @@
+.navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navbar img {
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    padding-inline: 3rem;
+}
+
+.nav-links li {
+    padding-inline: 3rem;
+}
+
+.nav-links li a {
+    font: 400 19px var(--mainFont);
+    color: #434343;
+}
+
+.nav-menu {
+    display: flex;
+
+}
+
+
+.hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width:940px) {
+    .nav-menu {
+        position: fixed;
+        z-index: 1;
+        right: -100%;
+        top: 0;
+        flex-direction: column;
+        width: 80%;
+        background: #000;
+        height: 100vh;
+        align-items: center;
+        transition: 1s;
+    }
+
+    .nav-links {
+        flex-direction: column;
+
+    }
+
+    .nav-links li {
+        padding-block: 1rem;
+    }
+
+    .nav-menu.active {
+        right: 0;
+
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1;
+    }
+
+    .walletbtn {
+        position: absolute;
+        max-width: 300px;
+        top: 40%;
+    }
+
+    li a {
+        color: #fff;
+    }
+}

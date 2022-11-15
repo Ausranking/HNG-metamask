@@ -1,25 +1,36 @@
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import Logo from '../images/Group.png'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import './Navbar.css'
 
 const Navbar = ({ showModal }) => {
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => {
+        setClick(!click)
+    }
     return (
-        <header className="header">
+        <div className="navbar">
             <div className="logo">
-                <a href="/"> <img src="images\Group.png" alt="logo" /></a>
-
-
+                <img src={Logo} alt='logo' />
             </div>
-            <nav className="navlist">
-                <Link to="/">Home</Link>
-                <Link to="places">place to stay</Link>
-                <Link to="/">NFTs</Link>
-                <Link to="/">Community</Link>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <span className="nav-links">
+                    <li className='nav-item'> <Link to="/">Home</Link></li>
+                    <li className='nav-item'> <Link to="places">place to stay</Link></li>
+                    <li className='nav-item'> <Link to="/">NFTs</Link></li>
+                    <li className='nav-item'> <Link to="/">Community</Link></li>
+                </span>
 
-            </nav>
-            <button onClick={showModal} className="walletbtn">Connect Wallet</button>
+                <button onClick={showModal} className="walletbtn">Connect Wallet</button>
+            </ul>
+            <div className="hamburger" onClick={handleClick}>
+                {click ? (<FaTimes size={30} style={{ color: '#fff' }} />) : (<FaBars size={30} style={{ color: '#000' }} />)}
+            </div>
 
 
-        </header>
+        </div>
     )
 }
 
