@@ -39,8 +39,8 @@
     display: none;
 }
 
-
-@media screen and (max-width:940px) {
+    /* for mobile phones */
+@media screen and (max-width:920px) {
     .nav-menu {
         position: fixed;
         z-index: 1;
@@ -75,11 +75,18 @@
 
     .walletbtn {
         position: absolute;
-        max-width: 300px;
+        width: 300px;
+        max-width: 90%;
         top: 40%;
     }
 
     li a {
         color: #fff;
+    }
+}
+
+@media screen and (min-width:821px) and (max-width:1025px) {
+    .nav-links li {
+        padding-inline: 1.5rem;
     }
 }

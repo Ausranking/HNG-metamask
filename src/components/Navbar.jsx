@@ -4,16 +4,17 @@ import Logo from '../images/Group.png'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import './Navbar.css'
 
-const Navbar = ({ showModal }) => {
+const Navbar  =  ({ showModal }) => {
     const [click, setClick] = useState(false)
 
     const handleClick = () => {
         setClick(!click)
     }
     return (
-        <div className="navbar">
+        <div className="navbar" onClick={handleClick}>
             <div className="logo">
-                <img src={Logo} alt='logo' />
+               <a href="/"><img src={Logo} alt='logo' /></a>
+               
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 <span className="nav-links">

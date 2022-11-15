@@ -1,6 +1,6 @@
 import closeb from '../images/close.png'
 import metamask from '../images/metamask.png'
-import WALLETC from '../images/walletconnet.png'
+import wallet from '../images/walletconnet.png'
 
 const Modal = ({open, close}) => {
 
@@ -18,7 +18,7 @@ const Modal = ({open, close}) => {
                     <img src={metamask} alt="crypto-coin" />
                 </div>
                 <div className="wallets">
-                    <img src={WALLETC} alt="crypto-coin" />
+                    <img src={wallet} alt="crypto-coin" />
                 </div>
             </div>
         </dialog>)

@@ -73,7 +73,6 @@
     max-width: auto;
 }
 
-/* The Close Button */
 .close {
     border: none;
     background: none;
@@ -86,7 +85,7 @@
 main {
     display: flex;
     gap: 9rem;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     margin: auto;
     place-items: center;
@@ -165,7 +164,7 @@ input:focus {
 
 .nft {
     margin-block-start: 2rem;
-    max-width: 100%;
+    width: 100%;
     min-height: 100vh;
     background: var(--main-color);
 }
@@ -174,9 +173,9 @@ input:focus {
     display: flex;
     place-items: center;
     display: flex;
-    max-width: 90%;
     margin: auto;
     padding-top: 5rem;
+    padding-inline: 2rem;
 }
 
 .nft h3 {
@@ -234,6 +233,7 @@ ul>h4 {
     padding-inline: .6rem;
 }
 
+/* for mobile phones */
 @media (max-width:600px) {
 
     .main {
@@ -249,23 +249,57 @@ ul>h4 {
     .modal-content {
 
         padding: 5px;
-        width: 90%;
-        margin: auto;
-
-    }
-
-    .wallets {
         width: 100%;
         margin: auto;
+
     }
 
     .wallets img {
         width: 300px;
+        max-width: 90%;
     }
+
     .nft-wrap {
         flex-wrap: wrap;
     }
+
     .nft img {
         max-height: 350px;
     }
+}
+
+/* for ipads */
+@media (min-width: 481px) and (max-width:820px) {
+    main {
+        margin-top: 4rem;
+    }
+
+    .footwrap {
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .nft-wrap {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:821px) and (max-width:1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .main {
+        gap: 3rem;
+        margin: auto;
+    }
+
+    .nft-wrap {
+        padding-inline: 0;
+        flex-wrap: nowrap;
+    }
+
 }
