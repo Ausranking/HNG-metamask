@@ -78,7 +78,9 @@ li a {
     margin: auto;
     flex-direction: column;
   }
-
+  .grid img {
+    width: 350px;
+  }
 
 
   main {
